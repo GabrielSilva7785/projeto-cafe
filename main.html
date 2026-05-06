@@ -1,62 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Cafeteria</title>
   <link rel="stylesheet" href="style.css">
-  
+
 </head>
+
 <body>
+ <nav>
+  <div class="nav-container">
+    
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo da cafeteria">
+    </div>
 
-<nav>
-  <ul id="navegacao">
-    <li><a href="#">Pedidos</a></li>
-    <li><a href="#">Conta</a></li>
-    <li><a href="#">Lojinha</a></li>
-  </ul>
+    <div id="navegacao">
+      <a href="#">Início</a>
+      <a href="#pedidos">Pedidos</a>
+      <a href="#">Conta</a>
+      <a href="#">Lojinha</a>
+    </div>
+
+  </div>
 </nav>
+  <section class="inicio" id="inicio">
+    <div class="home-container">
+      <h3>Lorem ipsum <span>dolor sit ame</span></h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus perspiciatis maxime vero amet veritatis nihil laborum repudiandae sapiente beatae necessitatibus aperiam velit id repellendus, rem molestiae? Autem facere veritatis vel.</p>
+    </div>
+  </section>
 
-<div class="container">
-  <h1>☕ Pedido da Cafeteria</h1>
+  <section class="pedidos" id="pedidos">
+    <div class="container">
+      <h1>☕ Pedido da Cafeteria</h1>
 
-  <div class="section">
-    <h2>Cafés</h2>
-    <div class="item">Expresso <span>R$ 5</span></div>
-    <div class="item">Cappuccino <span>R$ 7</span></div>
-    <div class="item">Latte <span>R$ 8</span></div>
-    <div class="item">Cold Brew <span>R$ 12</span>   </div>
+      <div class="section">
+        <h2>Cafés</h2>
+        <div class="item">Expresso <span>R$ 5</span></div>
+        <div class="item">Cappuccino <span>R$ 7</span></div>
+        <div class="item">Latte <span>R$ 8</span></div>
+        <div class="item">Cold Brew <span>R$ 12</span> </div>
 
-  </div>
+      </div>
 
-  <div class="section">
-    <h2>Tortas</h2>
-    <div class="item">Chocolate <span>R$ 10</span></div>
-    <div class="item">Limão <span>R$ 9</span></div>
-    <div class="item"> Frutas vermelhas <span>R$ 18</span></div>
-    <div class="item">Pistache <span>R$ 18 </span></div>
+      <div class="section">
+        <h2>Tortas</h2>
+        <div class="item">Chocolate <span>R$ 10</span></div>
+        <div class="item">Limão <span>R$ 9</span></div>
+        <div class="item"> Frutas vermelhas <span>R$ 18</span></div>
+        <div class="item">Pistache <span>R$ 18 </span></div>
 
-  </div>
+      </div>
 
-  <div class="section">
-    <h2>Salgados</h2>
-    <div class="item">Scone de Queijo <span>R$ 7</span></div>
-    <div class="item">Pao de queijo <span>R$ 7</span></div>
-    <div class="item">Waffle de queijo <span>R$18</span></div>
-  </div>
+      <div class="section">
+        <h2>Salgados</h2>
+        <div class="item">Scone de Queijo <span>R$ 7</span></div>
+        <div class="item">Pao de queijo <span>R$ 7</span></div>
+        <div class="item">Waffle de queijo <span>R$ 18</span></div>
+      </div>
 
-  <div class="section">
-    <h2>Especial</h2>
-    <div class="item">Espetinho de carne<span>R$ 12</span></div>
-    <div class="item">American Breakfast <span>R$35</span></div>
+      <div class="section">
+        <h2>Especial</h2>
+        <div class="item">Espetinho de carne <span>R$ 12</span></div>
+        <div class="item">American Breakfast <span>R$ 35</span></div>
 
-  
-  </div>
 
-  <button onclick="mostrarPedido()">Finalizar Pedido</button>
+      </div>
 
-  <div class="resultado" id="resultado"></div>
-</div>
+      <button onclick="mostrarPedido()">Finalizar Pedido</button>
 
-<script src="file.js"></script>
+      <div class="resultado" id="resultado"></div>
+    </div>
+  </section>
+
+  <script src="file.js" defer></script>
 </body>
+
 </html>

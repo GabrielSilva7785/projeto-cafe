@@ -20,7 +20,7 @@
 
     selecionados.forEach(item => {
       const texto = item.innerText;
-      const preco = parseFloat(texto.match(/R\$ (\d+)/)[1]);
+      const preco = parseFloat(texto.match(/R\$ (\d+(\.\d+)?)/ )[1]);
       total += preco;
 
       lista += `<li>${texto}</li>`;
